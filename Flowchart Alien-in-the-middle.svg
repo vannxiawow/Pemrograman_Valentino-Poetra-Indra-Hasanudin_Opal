@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="420" viewBox="0 0 500 420" style="font-family: sans-serif; font-size: 12px; background: #fff;">
+  <defs>
+    <marker id="arrow2" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#555"/>
+    </marker>
+  </defs>
+  <!-- Start -->
+  <ellipse cx="250" cy="30" rx="60" ry="20" fill="#e1bee7" stroke="#8e24aa" stroke-width="2"/>
+  <text x="250" y="34" text-anchor="middle" font-weight="bold" fill="#4a148c">START</text>
+  <line x1="250" y1="50" x2="250" y2="70" stroke="#555" stroke-width="2" marker-end="url(#arrow2)"/>
+  
+  <!-- Input -->
+  <polygon points="180,70 320,70 300,110 200,110" fill="#bbdefb" stroke="#1e88e5" stroke-width="2"/>
+  <text x="250" y="94" text-anchor="middle" fill="#0d47a1">Input pesan_asli</text>
+  <line x1="250" y1="110" x2="250" y2="130" stroke="#555" stroke-width="2" marker-end="url(#arrow2)"/>
+  
+  <!-- Init loop -->
+  <rect x="175" y="130" width="150" height="35" rx="4" fill="#c8e6c9" stroke="#43a047" stroke-width="2"/>
+  <text x="250" y="152" text-anchor="middle" fill="#1b5e20">i = 0, n = len(pesan)</text>
+  <line x1="250" y1="165" x2="250" y2="185" stroke="#555" stroke-width="2" marker-end="url(#arrow2)"/>
+  
+  <!-- Decision i < n -->
+  <polygon points="250,185 330,220 250,255 170,220" fill="#ffe0b2" stroke="#fb8c00" stroke-width="2"/>
+  <text x="250" y="224" text-anchor="middle" fill="#e65100">i &lt; n ?</text>
+  
+  <!-- No -> Print result -->
+  <line x1="330" y1="220" x2="400" y2="220" stroke="#555" stroke-width="2"/>
+  <text x="365" y="215" text-anchor="middle" font-size="10" fill="#d32f2f">TIDAK</text>
+  <line x1="400" y1="220" x2="400" y2="350" stroke="#555" stroke-width="2"/>
+  <line x1="400" y1="350" x2="315" y2="350" stroke="#555" stroke-width="2" marker-end="url(#arrow2)"/>
+  <rect x="180" y="333" width="135" height="34" rx="4" fill="#c8e6c9" stroke="#43a047" stroke-width="2"/>
+  <text x="247" y="355" text-anchor="middle" fill="#1b5e20">Cetak pesan_sandi</text>
+  
+  <text x="235" y="275" text-anchor="middle" font-size="10" fill="#2e7d32">YA</text>
+  <line x1="250" y1="255" x2="250" y2="285" stroke="#555" stroke-width="2" marker-end="url(#arrow2)"/>
+  
+  <rect x="160" y="285" width="180" height="38" rx="4" fill="#e1bee7" stroke="#8e24aa" stroke-width="2"/>
+  <text x="250" y="302" text-anchor="middle" fill="#4a148c">i==0 ? copy : geser</text>
+  <text x="250" y="316" text-anchor="middle" font-size="10" fill="#4a148c">berdasar char sebelumnya</text>
+  
+  <!-- Loop back for i++ -->
+  <path d="M 160 304 L 110 304 L 110 200 L 250 200 L 250 185" fill="none" stroke="#555" stroke-width="2" marker-end="url(#arrow2)"/>
+  
+  <line x1="250" y1="323" x2="250" y2="385" stroke="#555" stroke-width="2" marker-end="url(#arrow2)"/>
+  <ellipse cx="250" cy="390" rx="50" ry="18" fill="#e1bee7" stroke="#8e24aa" stroke-width="2"/>
+  <text x="250" y="394" text-anchor="middle" font-weight="bold" fill="#4a148c">END</text>
+</svg>
